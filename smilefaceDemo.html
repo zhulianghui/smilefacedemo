@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1400" height="700"
+        style="border:1px solid #000000; margin: auto;">
+</canvas>
+<script>
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(700,350,300,0,2*Math.PI);
+    ctx.stroke();
+    //ctx.fillRect(480,200,150,75);
+    //ctx.fillRect(800,200,150,75);
+</script>
+<script>
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(550,200,50,0,2*Math.PI);
+    ctx.stroke();
+</script>
+<script>
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(870,200,50,0,2*Math.PI);
+    ctx.stroke();
+</script>
+<script>
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.moveTo(700,300);
+    ctx.lineTo(650,400);
+    ctx.stroke();
+    ctx.moveTo(750,400);
+    ctx.lineTo(700,300);
+    ctx.stroke();
+</script>
+</body>
+</html>
